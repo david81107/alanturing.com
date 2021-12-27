@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ENIGMA-Alan Mathison Turing</title>
+</head>
+<style>
+p {
+  width: 1300px;
+  margin: auto;
+  border: 1px solid black;
+}
+</style>
+
+<body style="text-align:center;">
+
+<style>
+body {
+  background-image: url('bck.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+
+<style>
+p {
+  background-color:white;
+  font-size:150%;
+}
+</style>
+
+
+<h1 style="font-size:450%; background-color:black; color:white; text-align:center;">Alan Mathison Turing</h1>
+
+<h2 style="font-size:150%; background-color:black; color:white; text-align:center;">ENIGMA</h2>
+
+<button onclick="document.location='index.html'">HOMEPAGE</button> <br> <br>
+<button onclick="document.location='gallery.html'">GALLERY</button> <br> <br>
+
+
+<p style="text-align:center;">  Enigma je bila mašina za šifrovanje radio-telegrafskih poruka, upotrebljavana za vrijeme Drugog svjetskog rata od strane njemačkog vermahta.
+
+Riječ Enigma dolazi iz grčkog jezika i znači 'zagonetka'. </p>
+
+<br><br>
+
+<img src="ALAN7.jpg" alt="the imitation game" width="600" height="400"> <br> <br> 
+
+
+<p style="text-align:center;"> Enigmu je konstruisao Nijemac Artur Šerbius 1923. godine. Osnovao je firmu Chiffriermaschinen AG Berlin (Mašine za šifrovanje AG Berlin) koja je enigmu proizvodila, 
+kasnije dalje usavršavala i na tržištu prodavala kao komercijalni sistem za šifrovanje, prvenstveno za civilne namjene. Prvi primjerci su se pojavili 20-ih godina XX veka kao mašina za šifrovanje 
+telegrafski prenošenih poslovnih poruka. Malo kasnije Enigma nalazi primjenu u njemačkoj vojsci i diplomatiji, a izbijanjem Drugog svjetskog rata Enigma je postala standardna oprema svih vojnih 
+jedinica za vezu.
+
+Svojim izgledom enigma podsjeća na poveću pisaću mašinu. Sa prednje strane ima tastaturu od 26 slova iznad koje se nalazi 26 sijalica. Svaka od tih sijalica predstavlja jedno od 26 izlaznih slova.
+ Sastojala se od tastature i više valjaka. Zato se svrstava u grupu Rotor-Šifrovnih mašina, kao i engleska Typex (tipeks) ili američka M-325.
+
+Ti valjci su imali električne kontakte, tako da se pri pritisku na jedan taster tastature aktivira strujno kolo od tastera kroz valjak do monitora, na kome zasvijetli pritisnuto slovo. Prikazana 
+slova su formirala šifrovani, odnosno dešifrovani tekst. Pošto su se pri svakom pritisku na taster tastature valjci dalje okretali, ista slova su svaki put drugačije šifrovana.
+
+U nekim savremenim kompjuterskim sistemima (juniks) još uvijek se koristi jedna softverska varijanta enigme (crypt).
+
+Od standardne verzije enigme sa 3 valjka i 4 zamijenjena para slova dobijaju se sl. kombinacije šifri:
+
+Postoji 6 mogućnosti, da bi se 3 valjka dovela u različit položaj.
+
+Svaki valjak može se dovesti u jedan od 26 početnih položaja. Iz kombinacije sa tri valjka proizilazi 17576 različitih početnih položaja.
+Samo tri valjka znači proizvode 105456 kombinacija šifre. Da bi još više uvećala sigurnost, enigma je posjedovala i tzv. kontaktnu tablu, pomoću koje su se strujna kola slovnih parova mogla zamijeniti.
+ Ako bi npr. ukucali slovo A, onda bi bilo aktivirano strujno kolo slova E, i obrnuto.
+
+Kontaktna tabla
+Pri izboru 4 para zamijenjenih slova iz 26 slova, dobija se 164.038.875 mogućnosti.
+Na početku se moraju iz 26 mogućih izdvojiti dva slova, zatim iz 24, pa 22 - na kraju 20. Pošto redoslijed izbora ne igra nikakvu ulogu, treba se samo još podeliti brojem mogućnosti ta četiri para.
+ Korišćenjem binominalnog koeficijenta proizilazi
+164038875.
+Dakle, kontaktna tabla i valjci zajedno proizvode 17.298.883.602.000 mogućih šifri.  </p>
+
+<br><br>
+
+
+<p style="text-align:center;">  Enigma je elektromehanička mašina koja je koristila principe spojenih rotora i razvodne ploče. Svrha enigme bila je šifrovanje informacija tj. njihovo prikazivanje na način 
+nerazumljiv neovlašćenim osobama.
+
+Tekst se unosi preko tastature, a izlaz se dobija preko sijalica. Između tastature i sijalica nalazi se glavni mehanizam, jezgro mašine. Jezgro mašine čine rotori. Rotori imaju više funkcija:
+
+moraju osigurati preslikavanje znakova;
+moraju rotirati
+Rad enigme zasniva se na supstituciji znakova. Dva poznata načina šifrovanja koja koriste supstituciju, a čine osnovu za razumevanje rada Enigme su: aritmetička supstitucija i mapirajuća supstitucija. Enigma u
+ svom radu koristi oba navedena algoritma.
+
+Aritmetička supstitucija
+Za zadatu ulaznu abecedu A, zavisno od nekog broja n, vrši preslikavanja na način da pomera ulaznu abecedu udesno za n mesta, pa na taj način dobijamo šifrovanu abecedu. Npr. ukoliko imamo neku reč iz abecede A 
+i želimo je šifrovati „ključem“ n, onda 
+ćemo šifrovanu reč abecede B dobiti tako što svako slovo te reči zamenimo slovom iz abecede B. Dešifrovanje se vrši obrnutim redosledom.
+
+Primjer: Ulazna abeceda A={a, b, c, d, e}, broj n=3, pa je prema tome abeceda B={d, e, a, b, c}.
+
+Ako je zadat ulazni tekst "deda", onda je izlazni tekst "bcbd"
+
+Mapirajuća supstitucija
+Mapirajuća supstitucija ne upotrebljava nikakvo pomjeranje. Fiksno je određeno gdje se koji znak preslikava, tj. svakom znaku X pridružen je odgovarajući znak Y na temelju tablice preslikavanja.
+za ulaz	A, B,	C,	D,	E; izlaz je B,	E,	A,	C.	
+
+Pa je za ulazni niz "abba" izlaz: "beeb".
+
+Oba algoritma unose slabu meru sigurnosti. Iskusnija osoba koja se bavi dekodiranjem šifri ne bi imala nekih većih problema da ih otkrije pojedinačno. </p>
+
+<br><br>
+
+
+<p style="text-align:center;">  Rotori su poput nekakvih prospojnih ploča sa 26 ulaza i istim brojem izlaza. Svako dugme na tastaturi povezano je s rotorom pomoću kabla. Ulazi na rotoru primaju ulazno slovo, a 
+kao izlaz daju njemu pridruženo izlazno slovo dobijeno 
+pomoću tablice preslikavanja. Sve u svemu za sada ovo predstavlja nizak stepen zaštite, jer obavljeno je samo jedno preslikavanje. 
+Stoga je izlaz prvog rotora spojen na ulaz drugog rotora, a izlaz drugog rotora na ulaz trećeg rotora. Čak i ovakav poveći broj preslikavanja nije toliko otporan, jer je problem vezan uz frekvenciju pojavljivanja
+ određenih znakova i dalje prisutan.
+
+Sledeću komponentu čini jedan poseban rotor, poznat kao reflektor. Naime, za razliku od prethodna 3 rotora koja vrše asimetrična preslikavanja, reflektor je simetrični rotor što konkretno znači da za svako slovo za 
+koje važi A -> B, onda važi i B -> A. To znači da je
+ algoritam za šifrovanje i dešifrovanje isti. Razlika između reflektora i 3 pre spomenuta rotora je ta da reflektor ne rotira.
+
+Plug board predstavlja još jednu komponentu enigme. Ona obavlja simetrično preslikavanje i to cijelog ulaznog alfabeta ili samo jednog dijela koji ima izlaz (slično reflektoru). Nalazi se prije prvog rotora, a
+ ni on, kao ni reflektor ne rotira.
+
+Nakon što je ulaz doživio 4 preslikavanja sada ponovo prolazi kroz prva tri rotora počevši od trećeg ka prvom. Sijalica koja svijetli predstavlja šifrovani ulazni znak. Slovo je šifrovano i prvi rotor rotira. 
+Rotiranje predstavlja promjenu tablice preslikavanja:
+
+Iz tablice proizilazi da je slovo A prije rotiranja bilo predstavljeno kao D, a nakon rotiranja kao G. Nema više jednoznačnog preslikavanja. Sada bilo koje slovo može biti zapisano kao više različitih slova što 
+predstavlja znatan napredak.
+
+Postupak šifrovanja se nastavlja dalje tako da za prvih 26 slova rotira samo prvi rotor, a zatim, zavisno od rednog broja slova koje unosimo, rotiraju:
+
+prvi i drugi zajedno (u slučaju kada početna tablica preslikavanja prvog rotora treba postati njegova nova tablica preslikavanja);
+samo drugi (redni broj znaka veći od 26, a manji od 52);
+drugi i treći (isto kao prvi i drugi);
+samo treći (redni broj znaka veći od 52, a manji od 76);
+treći i prvi (kada početna tablica preslikavanja trećeg rotora treba postati njegova nova tablica preslikavanja).
+Za ostale znakove postupak se rekurzivno nastavlja. </p>
+
+<br><br>
+
+
+<p style="text-align:center;">  Grupa poljskih matematičara oko Marijana Rejevskog, je još prije Drugog svetskog rata postizala velike uspjehe pri dešifrovanju, enigmom šifrovanih tekstova.
+
+Iskoristivši činjenicu, da su Nijemci zbog sigurnosti, na početku poruke tzv. ključ poruke (grupu od tri slova) slali dva puta, Rejevski je drastično smanjio obim traženja šifre. Osim toga, razvio je katalog sa
+ „otiscima prstiju“ određenih kombinacija i pozicija valjaka.
+
+Uz pomoć elektromehaničkih računara, tzv. bombi, bilo je moguće u roku od par sati dešifrovati dnevni ključ, koji je služio za šifrovanje poruka i koji su Nijemci svaki dan u 0 sati mijenjali. Nijemci su 1939. 
+pooštrili parametre enigme. Umesto tri počeli su upotrebljavati pet valjaka (od njih su po tri bila upotrebljavana) i pomoću kontaktne table su umjesto dosada 4 zamjenjivali 10 parova slova. Kroz te izmjene je obim
+ traženja šifre mogao biti savladan samo kroz upotrebu daljnjih 60 bombi.
+
+Znanje tih kriptografskih slabih strana enigme, planovi bombi, kao i dvije kopije enigme su uspješno prebačene u Francusku i Englesku samo dve nedjelje prije njemačkog napada na Poljsku.
+
+
+Maketa „Tjuringove bombe“ u Blečli parku u Engleskoj
+Ta saznanja su od strane saveznika, najviše u Engleskoj dalje korišćena i proširivana.
+
+Između ostalog, to se može zahvaliti i jednom Nijemcu (Hans Tilo Šmit), koji je radeći kao vezista pri vermahtu, iz finansijskih razloga ali i želeći osvetu zbog besčasnog otpuštanja iz vojske nakon Prvog svetskog rata, 
+stupio u kontakt sa francuskom obavještajnom službom.
+
+Sastajao se tri puta sa agentom „Reks“. On sam je dobio šifre "АХ", "Asché" i "Source D".
+
+Predao je Francuzima planove enigme[1][2][3], ali bez plana električnih vodova. Odan je Nijemcima od strane francuske obavještajne službe. Izvršio je samoubistvo trovanjem 19. septembra 1943. u zatvoru u Berlinu.
+
+Radovi engleskih stručnjaka za dešifrovanje su se odvijali u Blečli parku pod šifrom Ultra. Oni su nastavili tamo gdje je Rejevski morao stati i postigli su uspješno dešifrovanje 1939. poboljšane enigme (tipa C) i
+ pored pooštrenih parametara. Vremenom su iskorišćavali i ležernost njemačkih „šifrera“ kao i šematski građene poruke kao npr. koordinate pozicija ili prognoze vremena. U Blečli parku na dešifrovanju poruka je radilo oko
+ 7000 ljudi.
+
+Jedan od stručnjaka bio je i engleski matematičar Alan Tjuring, čiji su radovi i za današnju informatiku od velikog značaja. Pred kraj rata saveznici su bili u stanju da dešifruju skoro sav njemački radio-telegrafski saobraćaj.
+
+Određeni istoričari tvrde, da je uspeh dešifrovanja enigme cijeli Drugi svetski rat skratio, za par meseci, možda čak i za jednu godinu.
+
+Posle rata su od saveznika zaplijenjeni enigma uređaji, prodani na bliski Istok i u neke afričke zemlje. Samim tim su saveznici (Engleska, Francuska i SAD) bili u mogućnosti da dešifruju radio-telegrafski saobraćaj tih zemalja. </p>
+
+<br><br>
+
+
+
+</body>
+</html>
